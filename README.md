@@ -2,7 +2,7 @@
 
 In general, a good git history is one that shows evidence of incremental development.  
 
-For example, in this commit we can easily tell:
+For example, in this repo we can easily tell:
 - the order in which features were added
 - what bugs were fixed along the way
 - if any significant refactoring was done 
