@@ -1,46 +1,24 @@
-# rim
-`rim` is a simple text editor similar to `nano` that is implemented in Rust.
+# A (Good) Git History
 
-## Set up 
-1. Clone the repo to your directory of choice and ensure that you have Rust installed
-2. Run the following 
+In general, a good git history is one that shows evidence of incremental development.  
 
-```
-$ cargo build --release
-$ ./target/release/rim [FILE_NAME]
-```
-> Note: You can (and should) move the executable to a better location.
+For example, in this commit we can easily tell:
+- the order in which features were added
+- what bugs were fixed along the way
+- if any significant refactoring was done 
 
-## Controls
-| Action                  | Modifier |  Key(s)    |
-|-------------------------|----------|------------|
-| Navigation              | -        | Arrow Keys |
-| Cursor left             | Ctrl     | b          |
-| Cursor right            | Ctrl     | f          |
-| Cursor up               | Ctrl     | p          |
-| Cursor down             | Ctrl     | n          |
-| Cursor to start of line | Ctrl     | a          |
-| Cursor to end of line   | Ctrl     | e          |
-| Delete at cursor        | Ctrl     | d          |
-| Kill to end of line     | Ctrl     | k          |
-| Paste killed text       | Ctrl     | y          |
-| Save                    | Ctrl     | s          |
-| Exit                    | -        | Esc        |
-| Exit                    | Ctrl     | x          |
+A good rule of thumb for a solid commit history addresses each of these points directly: **you should commit when you add a new feature, fix a bug, or perform any significant refactoring.**
 
-## To be implemented
-- Undo/redo
-- Find and replace 
-- Add auto horizontal scrolling
-- Delete to beginning from cursor
-- Jump to beginning/end
-- Message/command bar
-- Controls help message
-- Open scratch buffer using `rim`
-- Exit without saving message
-- Ctrl-l to center cursor if possible
+You should also make sure your commit messages are **descriptive**. If you can't read your message and understand exactly what was changed, the message isn't descriptive enough.
 
-## Issues
-- Change refresh to refresh to end of file (starting from previous line) to limit flicker
-- Fix slow paste on some terminals (move from iterative to jump)
+Here's a descriptive message: `implement auto vertical scrolling`
 
+Here's a vague message (which you should avoid): `bug fix`
+
+To be clear, this is an example of a good git history for the purposes of this class. It's probably not ideal for a more formal environment. **All we care about here is evidence of incremental development!**
+
+---
+
+You can view the commit history by clicking the button above that looks like this:
+
+![button](./commit-history-button.png)
