@@ -15,7 +15,7 @@ Here's a descriptive message: `implement auto vertical scrolling`
 
 Here's a vague message (which you should avoid): `bug fix`
 
-To be clear, this is an example of a good git history for the purposes of this class. It's probably not ideal for a more formal environment. **All we care about here is evidence of incremental development!**
+To be clear, this is an example of a good git history for the purposes of this class. It's probably not ideal for a more formal environment. **All we care about here is evidence of incremental development!** It's not important how many commits you have, as long as they provide that evidence.
 
 ---
 
